@@ -1,411 +1,490 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>KINTI ACADEMY | Innovación Educativa y Formación Continua</title>
-
-    https://cdn.tailwindcss.comscript>
-
+    <title>Kinti Academy | Innovación Educativa & EdTech</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        kintiPurple: '#2E1F5A',
-                        kintiTeal: '#2DD4BF',
-                        kintiDark: '#0B0F19'
+                        kintiIndigo: '#2E1F5A',
+                        kintiDarkBg: '#0B0F19',
+                        kintiTeal: '#1F929D',
+                        kintiMint: '#2DD4BF',
+                        kintiPurple: '#8B5CF6',
+                        kintiCard: '#161F33'
                     }
                 }
             }
         }
     </script>
-
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
 </head>
-
-<body class="bg-kintiDark text-white">
+<body class="bg-kintiDarkBg text-slate-100 antialiased selection:bg-kintiMint selection:text-kintiDarkBg">
 
     <!-- NAVBAR -->
-
-    <header class="fixed w-full z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
-
-        <nav class="container mx-auto flex justify-between items-center p-4">
-
+    <nav class="sticky top-0 z-50 bg-kintiDarkBg/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-
-                assets/logo-kinti.png alt="Kinti Academy Logo"
-                    class="w-14 h-14 rounded-full object-cover">
-
-                <div>
-                    <h1 class="font-bold text-xl">KINTI ACADEMY</h1>
-                    <p class="text-xs text-kintiTeal">
-                        Conocimiento que transforma
-                    </p>
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-kintiTeal to-kintiPurple flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-kintiTeal/20">
+                    K
                 </div>
-
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-kintiMint bg-clip-text text-transparent">KINTI ACADEMY</span>
+                    <span class="block text-[10px] tracking-widest text-kintiMint font-semibold uppercase">Global Education Platform</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#nosotros" class="hover:text-kintiMint transition">Nosotros</a>
+                <a href="#metodologia" class="hover:text-kintiMint transition">Metodología</a>
+                <a href="#catalogo" class="hover:text-kintiMint transition">Catálogo de Cursos</a>
+                <a href="#b2b" class="hover:text-kintiMint transition">Convenios B2B</a>
             </div>
 
-            <div class="hidden md:flex gap-8">
-
-                #nosotros class="hover:text-kintiTeal">Nosotros</a>
-                #metodologia
-                " class="hover:text-kintiTeal">Catálogo</a>
-                #b2b
-                contacto" class="hover:text-kintiTeal">Contacto</a>
-
-            </div>
-
-            #-kintiTeal text-black font-semibold px-5 py-3 rounded-xl hover:scale-105 transition">
-                Acceso Campus Canvas LMS
+            <a href="https://canvas.instructure.com" target="_blank" class="bg-gradient-to-r from-kintiTeal to-kintiMint text-kintiDarkBg font-bold px-5 py-2.5 rounded-xl hover:shadow-lg hover:shadow-kintiMint/25 transition transform hover:-translate-y-0.5 text-sm flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Campus Canvas LMS
             </a>
+        </div>
+    </nav>
 
-        </nav>
-
-    </header>
-
-    <!-- HERO -->
-
-    <section
-        class="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-br from-kintiPurple via-kintiDark to-kintiDark">
-
-        <div class="max-w-5xl">
-
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
-
-                Transformamos la educación mediante
-                <span class="text-kintiTeal">
-                    innovación, tecnología e inteligencia artificial
-                </span>
-
+    <!-- HERO SECTION -->
+    <section class="relative py-20 md:py-28 px-6 overflow-hidden border-b border-slate-800/80">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-kintiPurple/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-kintiIndigo/60 border border-kintiPurple/30 text-kintiMint text-xs font-semibold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-microchip"></i> EdTech & Innovación Pedagógica
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-white mb-6">
+                Transformamos la educación mediante <span class="bg-gradient-to-r from-kintiMint via-teal-300 to-kintiPurple bg-clip-text text-transparent">innovación, tecnología e Inteligencia Artificial</span>
             </h1>
-
-            <p class="text-xl text-gray-300 mb-8">
-
-                Impulsamos el crecimiento de docentes, profesionales,
-                estudiantes e instituciones mediante formación continua,
-                metodologías activas y tecnología educativa de clase mundial.
-
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8 font-normal leading-relaxed">
+                Impulsamos el desarrollo de docentes, profesionales e instituciones mediante formación continua de alto nivel, metodologías activas y tecnología educativa de estándar internacional.
             </p>
-
-            <p class="text-kintiTeal text-xl italic mb-12">
-                “Conocimiento que transforma, habilidades que conectan.”
-            </p>
-
+            <div class="italic text-kintiMint font-medium mb-10 text-base md:text-lg">
+                "Conocimiento que transforma, habilidades que conectan."
+            </div>
             <div class="flex flex-wrap justify-center gap-4">
-
-                #catalogo                    class="bg-kintiTeal text-black font-semibold px-8 py-4 rounded-xl">
-                    Explora el Catálogo
+                <a href="#catalogo" class="bg-kintiMint text-kintiDarkBg font-bold px-8 py-4 rounded-xl hover:bg-teal-300 transition shadow-lg shadow-kintiMint/20 text-base">
+                    Explorar Catálogo
                 </a>
-
-                #contacto class="border border-kintiTeal px-8 py-4 rounded-xl">
-                    Solicitar Asesoría
+                <a href="https://wa.me/593900000000?text=Hola,%20deseo%20información%20sobre%20capacitaciones%20de%20Kinti%20Academy" target="_blank" class="bg-kintiCard border border-slate-700 hover:border-kintiTeal text-white font-semibold px-8 py-4 rounded-xl transition text-base flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Solicitar Asesoría
                 </a>
-
             </div>
 
-            <div class="grid md:grid-cols-4 gap-6 mt-20">
-
-                <div>
-                    <h3 class="text-3xl font-bold text-kintiTeal">15+</h3>
-                    <p>Programas</p>
+            <!-- BADGES -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/60">
+                <div class="bg-kintiCard/50 p-4 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-bold text-kintiMint">15+</div>
+                    <div class="text-xs text-slate-400">Programas Especializados</div>
                 </div>
-
-                <div>
-                    <h3 class="text-3xl font-bold text-kintiTeal">100%</h3>
-                    <p>Virtual</p>
+                <div class="bg-kintiCard/50 p-4 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-bold text-kintiMint">100%</div>
+                    <div class="text-xs text-slate-400">Modalidad Online Flexible</div>
                 </div>
-
-                <div>
-                    <h3 class="text-3xl font-bold text-kintiTeal">Canvas LMS</h3>
-                    <p>Campus Virtual</p>
+                <div class="bg-kintiCard/50 p-4 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-bold text-kintiMint">Canvas LMS</div>
+                    <div class="text-xs text-slate-400">Campus Virtual 24/7</div>
                 </div>
-
-                <div>
-                    <h3 class="text-3xl font-bold text-kintiTeal">M365</h3>
-                    <p>Ecosistema Digital</p>
+                <div class="bg-kintiCard/50 p-4 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-bold text-kintiMint">M365</div>
+                    <div class="text-xs text-slate-400">Ecosistema Tecnológico</div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- NOSOTROS -->
-
-    <section id="nosotros" class="container mx-auto px-6 py-24">
-
-        <h2 class="text-4xl font-bold mb-10 text-center">
-
-            Sobre KINTI ACADEMY
-
-        </h2>
-
-        <p class="text-center text-gray-300 max-w-5xl mx-auto mb-16">
-
-            Somos un ecosistema EdTech especializado en formación continua,
-            innovación educativa y desarrollo profesional. Combinamos pedagogía,
-            neurociencias, inteligencia artificial y tecnología para crear
-            experiencias de aprendizaje que generan impacto real.
-
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-10">
-
-            <div class="bg-white/5 p-8 rounded-2xl">
-
-                <h3 class="text-2xl font-bold text-kintiTeal mb-4">Misión</h3>
-
-                <p>
-                    Brindar servicios educativos e integrales de alta calidad
-                    que fortalezcan el sistema educativo impulsando el potencial
-                    de estudiantes, docentes e instituciones mediante metodologías
-                    innovadoras y acompañamiento profesional continuo.
-                </p>
-
-            </div>
-
-            <div class="bg-white/5 p-8 rounded-2xl">
-
-                <h3 class="text-2xl font-bold text-kintiTeal mb-4">Visión</h3>
-
-                <p>
-                    Ser para el año 2031 el ecosistema líder en innovación
-                    educativa del Ecuador, reconocido por la calidad,
-                    inclusión y aplicación de tecnologías emergentes.
-                </p>
-
-            </div>
-
+    <!-- NOSOTROS / FILOSOFÍA -->
+    <section id="nosotros" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Filosofía Institucional</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Fundamentados en la excelencia, la neuroeducación y la democratización del conocimiento.</p>
         </div>
 
-    </section>
-
-    <!-- VALORES -->
-
-    <section class="py-24 bg-black/30">
-
-        <div class="container mx-auto px-6">
-
-            <h2 class="text-4xl font-bold text-center mb-16">
-
-                Nuestros Valores
-
-            </h2>
-
-            <div class="grid md:grid-cols-4 gap-6">
-
-                <div class="bg-white/5 p-6 rounded-2xl">
-                    <h3 class="font-bold text-kintiTeal mb-3">
-                        Innovación con Propósito
-                    </h3>
-                    <p>Aplicamos IA y tecnología para potenciar el aprendizaje.</p>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Misión -->
+            <div class="bg-kintiCard p-8 rounded-2xl border border-slate-800 relative overflow-hidden group hover:border-kintiTeal transition">
+                <div class="w-12 h-12 bg-kintiTeal/20 text-kintiMint rounded-xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-bullseye"></i>
                 </div>
-
-                <div class="bg-white/5 p-6 rounded-2xl">
-                    <h3 class="font-bold text-kintiTeal mb-3">
-                        Rigurosidad Académica
-                    </h3>
-                    <p>Fundamentos basados en pedagogía y neurociencias.</p>
-                </div>
-
-                <div class="bg-white/5 p-6 rounded-2xl">
-                    <h3 class="font-bold text-kintiTeal mb-3">
-                        Empatía Humana
-                    </h3>
-                    <p>Educación inclusiva centrada en las personas.</p>
-                </div>
-
-                <div class="bg-white/5 p-6 rounded-2xl">
-                    <h3 class="font-bold text-kintiTeal mb-3">
-                        Trascendencia
-                    </h3>
-                    <p>Educación de calidad sin barreras geográficas.</p>
-                </div>
-
+                <h3 class="text-2xl font-bold text-white mb-4">Misión</h3>
+                <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                    Brindar servicios educativos e integrales de alta calidad que fortalezcan y apoyen el desarrollo del sistema educativo, impulsando el potencial de estudiantes, docentes e instituciones mediante metodologías innovadoras y un acompañamiento profesional continuo.
+                </p>
             </div>
 
+            <!-- Visión -->
+            <div class="bg-kintiCard p-8 rounded-2xl border border-slate-800 relative overflow-hidden group hover:border-kintiPurple transition">
+                <div class="w-12 h-12 bg-kintiPurple/20 text-kintiPurple rounded-xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Visión 2031</h3>
+                <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                    Para el año 2031, KINTI ACADEMY será reconocido a nivel nacional como el ecosistema líder en innovación educativa del país, consolidando los servicios educativos como referentes de calidad, inclusión y aplicación de tecnologías emergentes al servicio del desarrollo humano.
+                </p>
+            </div>
         </div>
 
+        <!-- VALORES CORPORATIVOS -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-kintiDarkBg p-6 rounded-xl border border-slate-800 hover:border-kintiMint/40 transition">
+                <i class="fa-solid fa-brain text-kintiMint text-2xl mb-4"></i>
+                <h4 class="font-bold text-white mb-2">Innovación con Propósito</h4>
+                <p class="text-xs text-slate-400">Aplicación consciente de la IA y tecnologías digitales para optimizar los procesos cognitivos y de aprendizaje.</p>
+            </div>
+            <div class="bg-kintiDarkBg p-6 rounded-xl border border-slate-800 hover:border-kintiMint/40 transition">
+                <i class="fa-solid fa-book-bookmark text-kintiMint text-2xl mb-4"></i>
+                <h4 class="font-bold text-white mb-2">Rigurosidad Académica</h4>
+                <p class="text-xs text-slate-400">Respaldo metodológico basado en la pedagogía moderna y las neurociencias cognitivas.</p>
+            </div>
+            <div class="bg-kintiDarkBg p-6 rounded-xl border border-slate-800 hover:border-kintiMint/40 transition">
+                <i class="fa-solid fa-hand-holding-heart text-kintiMint text-2xl mb-4"></i>
+                <h4 class="font-bold text-white mb-2">Empatía Humana</h4>
+                <p class="text-xs text-slate-400">Enfoque personalizado, inclusivo y centrado en las necesidades reales del estudiante.</p>
+            </div>
+            <div class="bg-kintiDarkBg p-6 rounded-xl border border-slate-800 hover:border-kintiMint/40 transition">
+                <i class="fa-solid fa-earth-americas text-kintiMint text-2xl mb-4"></i>
+                <h4 class="font-bold text-white mb-2">Trascendencia</h4>
+                <p class="text-xs text-slate-400">Democratización del acceso a educación de alto nivel rompiendo barreras geográficas en el Ecuador y la región.</p>
+            </div>
+        </div>
     </section>
 
     <!-- METODOLOGÍA -->
-
-    <section id="metodologia" class="container mx-auto px-6 py-24">
-
-        <h2 class="text-4xl font-bold text-center mb-12">
-
-            Metodología KINTI
-
-        </h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-
-            <div class="bg-white/5 p-8 rounded-xl">
-                <h3 class="text-xl font-bold text-kintiTeal mb-3">
-                    Clases en Vivo
-                </h3>
-                <p>Sesiones sincrónicas con expertos y aprendizaje colaborativo.</p>
+    <section id="metodologia" class="py-16 px-6 bg-kintiCard/40 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-3">Modelo de Aprendizaje Flexible</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm">Combinación equilibrada de interacción docente en vivo y trabajo autónomo interactivo.</p>
             </div>
 
-            <div class="bg-white/5 p-8 rounded-xl">
-                <h3 class="text-xl font-bold text-kintiTeal mb-3">
-                    Canvas LMS
-                </h3>
-                <p>Accede a recursos, evaluaciones, foros y seguimiento académico.</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-kintiCard p-6 rounded-xl border border-slate-800 flex gap-4 items-start">
+                    <div class="w-12 h-12 rounded-lg bg-kintiTeal/20 text-kintiMint flex items-center justify-center shrink-0 text-xl font-bold">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-lg mb-1">Horas Sincrónicas (En Vivo)</h3>
+                        <p class="text-slate-300 text-sm">Acompañamiento directo con facilitadores expertos, debates guiados, resolución de dudas y talleres aplicados en tiempo real.</p>
+                    </div>
+                </div>
+
+                <div class="bg-kintiCard p-6 rounded-xl border border-slate-800 flex gap-4 items-start">
+                    <div class="w-12 h-12 rounded-lg bg-kintiPurple/20 text-kintiPurple flex items-center justify-center shrink-0 text-xl font-bold">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-lg mb-1">Horas Autónomas (Canvas LMS)</h3>
+                        <p class="text-slate-300 text-sm">Acceso 24/7 a guías descargables, lecturas especializadas, cuestionarios interactivos y proyectos prácticos de aplicación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE CURSOS -->
+    <section id="catalogo" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-kintiMint font-bold uppercase tracking-wider text-xs">Oferta Académica</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-4">Catálogo Completo de Cursos</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm">Programas diseñados para el fortalecimiento de competencias pedagógicas, psicopedagógicas y empresariales.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Docencia & IA</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 40 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Formador de Formadores</h3>
+                    <p class="text-xs text-slate-300 mb-4">Capacitación pedagógica y facilitación del aprendizaje para profesionales e instructores.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Formador%20de%20Formadores" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
             </div>
 
-            <div class="bg-white/5 p-8 rounded-xl">
-                <h3 class="text-xl font-bold text-kintiTeal mb-3">
-                    Microsoft 365
-                </h3>
-                <p>Integración con Teams, Forms, SharePoint y Copilot IA.</p>
+            <!-- Card 2 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Tecnología</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 40 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">IA Aplicada al Aula</h3>
+                    <p class="text-xs text-slate-300 mb-4">Uso de herramientas de Inteligencia Artificial para el diseño curricular, evaluación y producción de material.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20IA%20Aplicada%20al%20Aula" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Neurociencia</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 40 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Neuroeducación y Desarrollo Cognitivo</h3>
+                    <p class="text-xs text-slate-300 mb-4">Bases neurocientíficas aplicadas a la optimización de procesos de enseñanza e interacción pedagógica.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Neuroeducacion" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Inclusión</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 64 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Detección de NEE en el Aula</h3>
+                    <p class="text-xs text-slate-300 mb-4">Identificación oportuna y adaptación curricular para Necesidades Educativas Especiales.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20NEE" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Psicopedagogía</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 60 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Logopedia y Desarrollo del Lenguaje</h3>
+                    <p class="text-xs text-slate-300 mb-4">Estrategias de intervención temprana en la estimulación lingüística y dificultades del habla.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Logopedia" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Psicopedagogía</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 72 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Evaluación y Diagnóstico Psicopedagógico</h3>
+                    <p class="text-xs text-slate-300 mb-4">Herramientas técnicas e instrumentos de evaluación integral del aprendizaje.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Diagnostico" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Metodología</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 72 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Diseño Instruccional Activo</h3>
+                    <p class="text-xs text-slate-300 mb-4">Planificación e implementación de experiencias de aprendizaje basadas en metodologías activas.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Diseno%20Instruccional" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Metodología</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 24 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Pedagogía de la Curiosidad</h3>
+                    <p class="text-xs text-slate-300 mb-4">Estrategias centradas en el aprendizaje basado en indagación y preguntas detonantes.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Pedagogia%20Curiosidad" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Evaluación</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 16 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">El Arte de Evaluar</h3>
+                    <p class="text-xs text-slate-300 mb-4">Técnicas e instrumentos de evaluación formativa, cualitativa y auténtica.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Arte%20de%20Evaluar" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Bienestar</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 16 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Primeros Auxilios Psicológicos</h3>
+                    <p class="text-xs text-slate-300 mb-4">Intervención primaria y contención en situaciones de crisis en entornos educativos.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Primeros%20Auxilios%20Psicologicos" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Gestión</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 24 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Liderazgo y Trabajo en Equipo</h3>
+                    <p class="text-xs text-slate-300 mb-4">Desarrollo de competencias blandas, comunicación asertiva y gestión de equipos.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Liderazgo" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Empresarial</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 40 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Marketing Digital & Redes</h3>
+                    <p class="text-xs text-slate-300 mb-4">Estrategias de posicionamiento de marca, pauta digital y gestión comercial.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Marketing" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 13 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Empresarial</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 40 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Excel Empresarial</h3>
+                    <p class="text-xs text-slate-300 mb-4">Manejo de datos, tablas dinámicas y automatización para optimización operativa.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Excel" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Normativa</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 16 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Manipulación de Alimentos y BPM</h3>
+                    <p class="text-xs text-slate-300 mb-4">Buenas Prácticas de Manufactura e higiene para el sector alimenticio y gastronómico.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20BPM" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
+            </div>
+
+            <!-- Card 15 -->
+            <div class="bg-kintiCard rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-kintiTeal transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-kintiIndigo text-kintiMint text-xs px-3 py-1 rounded-full font-semibold">Gastronomía</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock"></i> 72 Horas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Bases de la Gastronomía</h3>
+                    <p class="text-xs text-slate-300 mb-4">Fundamentos culinarios, técnicas de corte, cocción y gestión eficiente de cocina.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <span class="text-xs text-slate-400">Modalidad: <strong class="text-slate-200">Virtual</strong></span>
+                    <a href="https://wa.me/593900000000?text=Informacion%20Gastronomia" target="_blank" class="text-xs bg-kintiTeal/20 hover:bg-kintiTeal text-kintiMint hover:text-white font-bold px-3 py-1.5 rounded-lg transition">Inscribirme</a>
+                </div>
             </div>
 
         </div>
-
     </section>
 
-    <!-- CATÁLOGO -->
-
-    <section id="catalogo" class="bg-black/30 py-24">
-
-        <div class="container mx-auto px-6">
-
-            <h2 class="text-4xl font-bold text-center mb-12">
-
-                Catálogo de Programas
-
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-8">
-
-                <div class="bg-white/5 p-6 rounded-xl">
-                    <h3 class="font-bold text-xl mb-2">
-                        Evaluación y Diagnóstico Psicopedagógico
-                    </h3>
-                    <p>72 Horas | Modalidad Virtual</p>
-                </div>
-
-                <div class="bg-white/5 p-6 rounded-xl">
-                    <h3 class="font-bold text-xl mb-2">
-                        Inteligencia Artificial Aplicada al Aula
-                    </h3>
-                    <p>40 Horas | Modalidad Virtual</p>
-                </div>
-
-                <div class="bg-white/5 p-6 rounded-xl">
-                    <h3 class="font-bold text-xl mb-2">
-                        Marketing Digital y Gestión de Redes
-                    </h3>
-                    <p>40 Horas | Modalidad Virtual</p>
-                </div>
-
-                <div class="bg-white/5 p-6 rounded-xl">
-                    <h3 class="font-bold text-xl mb-2">
-                        Neuroeducación y Desarrollo Cognitivo
-                    </h3>
-                    <p>40 Horas | Modalidad Virtual</p>
-                </div>
-
-                <div class="bg-white/5 p-6 rounded-xl">
-                    <h3 class="font-bold text-xl mb-2">
-                        Excel Empresarial
-                    </h3>
-                    <p>40 Horas | Modalidad Virtual</p>
-                </div>
-
-                <div class="bg-white/5 p-6 rounded-xl">
-                    <h3 class="font-bold text-xl mb-2">
-                        Liderazgo Estratégico y Trabajo en Equipo
-                    </h3>
-                    <p>24 Horas | Modalidad Virtual</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- B2B -->
-
-    <section id="b2b" class="container mx-auto px-6 py-24 text-center">
-
-        <h2 class="text-4xl font-bold mb-8">
-
-            Soluciones para Instituciones y Empresas
-
-        </h2>
-
-        <p class="max-w-4xl mx-auto text-gray-300 mb-10">
-
-            Diseñamos rutas formativas, programas personalizados y
-            capacitaciones In Company para colegios, universidades,
-            empresas y organizaciones.
-
-        </p>
-
-        #contacto            class="bg-kintiTeal text-black font-semibold px-8 py-4 rounded-xl">
-
-            Solicitar Propuesta Institucional
-
-        </a>
-
-    </section>
-
-    <!-- CONTACTO -->
-
-    <section id="contacto" class="bg-black/30 py-24">
-
-        <div class="container mx-auto px-6 text-center">
-
-            <h2 class="text-4xl font-bold mb-8">
-
-                Conversemos
-
-            </h2>
-
-            <p class="mb-8">
-
-                Nuestro equipo académico está listo para ayudarte.
-
+    <!-- SECCIÓN B2B / CONVENIOS CORPORATIVOS -->
+    <section id="b2b" class="py-16 px-6 bg-gradient-to-r from-kintiIndigo/80 via-kintiDarkBg to-kintiCard border-t border-slate-800">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="text-kintiMint font-bold uppercase tracking-wider text-xs">Capacitación In-Company</span>
+            <h2 class="text-3xl font-extrabold text-white mt-2 mb-4">¿Representas a una Institución Educativa o Empresa?</h2>
+            <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto mb-8">
+                Diseñamos planes de capacitación a la medida de tu equipo de trabajo. Benefíciate de nuestras tarifas corporativas especiales, becas por volumen y diagnóstico psicopedagógico institucional.
             </p>
-
-            999999"
-                class="bg-green-500 text-white px-8 py-4 rounded-xl">
-
-                WhatsApp Directo
-
+            <a href="https://wa.me/593900000000?text=Hola,%20busco%20una%20propuesta%20de%20capacitacion%20corporativa%20para%20mi%20institucion" target="_blank" class="bg-gradient-to-r from-kintiTeal to-kintiMint text-kintiDarkBg font-bold px-8 py-3.5 rounded-xl hover:shadow-lg transition text-base inline-flex items-center gap-2">
+                <i class="fa-solid fa-building-user"></i> Solicitar Propuesta Institucional
             </a>
-
         </div>
-
     </section>
 
     <!-- FOOTER -->
-
-    <footer class="bg-black py-10 text-center">
-
-        <h3 class="text-2xl font-bold mb-2">
-            KINTI ACADEMY
-        </h3>
-
-        <p class="text-kintiTeal mb-4">
-            Conocimiento que transforma, habilidades que conectan.
-        </p>
-
-        <p>Quito - Ecuador</p>
-
-        <p class="mt-4 text-gray-400">
-            © 2026 Servicios Educativos Kinti.
-            Todos los derechos reservados.
-        </p>
-
+    <footer id="contacto" class="bg-kintiDarkBg py-12 px-6 border-t border-slate-800 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <span class="text-lg font-bold text-white tracking-wide block mb-2">KINTI ACADEMY</span>
+                <p class="text-slate-400 mb-4">Plataforma Global de Formación Continua & Innovación Educativa.</p>
+                <span class="block text-slate-500">Servicios Educativos Kinti</span>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3 text-sm">Contacto Directo</h4>
+                <p class="mb-2"><i class="fa-solid fa-location-dot text-kintiMint mr-2"></i> Quito, Ecuador</p>
+                <p class="mb-2"><i class="fa-solid fa-envelope text-kintiMint mr-2"></i> info@kintiacademy.com</p>
+                <p><i class="fa-brands fa-whatsapp text-kintiMint mr-2"></i> +593 (Ecuador)</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3 text-sm">Tecnología de Respaldo</h4>
+                <p class="mb-2"><i class="fa-solid fa-layer-group text-kintiMint mr-2"></i> Canvas LMS - Campus Virtual</p>
+                <p><i class="fa-brands fa-microsoft text-kintiMint mr-2"></i> Ecosistema Microsoft 365</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 border-t border-slate-800/80 text-center text-slate-500">
+            &copy; 2026 Kinti Academy. Todos los derechos reservados.
+        </div>
     </footer>
 
 </body>
-
 </html>
